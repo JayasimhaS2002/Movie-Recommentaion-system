@@ -1,0 +1,34 @@
+{% extends 'index.html' %} {% block body %} <br />
+<br />
+
+{% if word_passed%}
+ 
+<b> Showing {{len2 }} results for {{text['user_info_2']}} </b>
+<br>
+<div class="col">
+       <table class="table table-hover table-light" >
+       
+   
+       
+           {% for table in tables %}
+           <tr >
+             <td style="text-align:top">{{ table|safe }}</td>
+           </tr>  
+          
+           {% endfor %}
+       
+       </table>
+       
+   </div>
+   
+   
+
+
+{% endif %}
+
+
+
+
+
+
+{% endblock %}

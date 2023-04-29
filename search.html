@@ -1,0 +1,40 @@
+{% extends 'index.html' %} {% block body %}
+
+<br />
+<br />
+
+<h5>Enter the Movie Name to get Recommendations for</h5>
+
+<form action="/save" method="POST" enctype="multipart/form-data">
+    <div class="input-group">
+      <input type="text" class="form-control" name="user_info" required />
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <button class="btn btn-primary" type="submit">
+          Search for similar movies using knn 
+        </button>
+    </div>
+    <br>
+</form>
+
+<br><br>
+<h5>Enter the Movie Name to get Recommendations for</h5>
+<form action="/result2" method="POST" enctype="multipart/form-data">
+  <div class="input-group">
+    <input type="text" class="form-control" name="user_info_2" required />
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    
+    <button class="btn btn-primary" >
+       Search for similar movies using content based filtering 
+    </button>
+  
+</div>
+
+  <br>
+
+{% endblock %}
